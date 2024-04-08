@@ -1,12 +1,11 @@
 // index.ts
-
 import App from './app';
-import IndexController from './controllers/index.controller';
-import PostController from './controllers/data.controller';
+import IndexController from "./controllers/index.controller";
+import DataController from "./controllers/data.controller";
 
-const app = new App([
-    new IndexController(),
-    new PostController()
+const app: App = new App([
+   new IndexController(),
+   new DataController()
 ]);
 
 app.listen();
